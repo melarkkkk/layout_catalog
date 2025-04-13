@@ -23,25 +23,25 @@
     align-items: center;
     text-align: center;
 
-    &--is-active {
-      color: $blue-accent;
-    }
-
-    &--is-active::after {
-      content: '';
-      width: 100%;
-      display: block;
-
-      position: absolute;
-      bottom: 0;
-
-      background-color: $blue-accent;
-      height: 4px;
-      border-radius: 8px;
-    }
-
     &:hover {
       color: $blue-accent;
     }
+  }
+}
+
+.is-active {
+  color: $blue-accent;
+
+  &::after {
+    content: '';
+    width: 100%;
+    display: block;
+
+    position: absolute;
+    bottom: 0;
+
+    background-color: $blue-accent;
+    height: 4px;
+    border-radius: 8px;
   }
 }
